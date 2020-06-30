@@ -1,0 +1,34 @@
+{
+  "name": "@jiaxinjiang/nest-http",
+  "version": "1.0.0",
+  "description": "Http request component for NestJs.",
+  "keywords": [
+    "nest",
+    "nest-http",
+    "nest-restful",
+    "nest-request",
+    "nest-http-request"
+  ],
+  "main": "dist/",
+  "scripts": {
+    "build": "tsc -d"
+  },
+  "dependencies": {
+    "@jiaxinjiang/nest-exception": "^1.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.5.5"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.2.0",
+    "@nestjs/core": "^6.2.4",
+    "@nestjs/testing": "^7.0.0",
+    "@types/jest": "^25.1.5",
+    "jest": "^24.7.1",
+    "prettier": "^1.13.7",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}
