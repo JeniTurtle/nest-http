@@ -44,5 +44,5 @@ export interface ResponseSchema<T> {
   code: number;
   msg: string;
   data: T | null;
-  success: boolean;
+  status?: number;
 }

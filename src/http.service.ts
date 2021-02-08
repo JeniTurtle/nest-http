@@ -113,7 +113,7 @@ export class HttpFetchService {
         code: data.code || 0,
         msg: data.msg || '',
         data: content,
-        success: data.code === 600,
+        status: resp.status,
       } as ResponseSchema<T>;
     } catch (err) {
       this.logger.error(err.message);
@@ -129,7 +129,7 @@ export class HttpFetchService {
         code: err.response.data.code || 0,
         msg: err.response.data.msg || err.message,
         data: err.response.data.data,
-        success: false,
+        status: resp.status,
       } as ResponseSchema<T>;
     }
     return response;
